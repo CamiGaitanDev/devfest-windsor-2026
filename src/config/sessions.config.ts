@@ -232,4 +232,11 @@ Translating those pivotal moments to modern software development, we’ll cut th
 In this talk, we will walk through how to keep the fast pace of prototyping while preparing your agent for production through hill climbing. Instead of guessing whether an edit helped or hurt, you will set up an evaluation suite that gives you a clear score after every change. First, we will trace what happens inside a single agent turn across context windows, tools, MCP, skills, and sub-agents so you know which part to adjust when a test fails. Then, using a sample EV Service Concierge agent built with Google's Agent Development Kit (ADK), we will take a 15-minute prototype, improve its tool schemas, and run automated prompt optimization until it passes every test case.`,
     isSubmitted: true,
   },
+    {
+    id: "steven-rice-001",
+    title: "Standardizing Humanoid Control: Lessons from Industrial Robotics",
+    speaker: "Steven Rice",
+    description: `Despite rapid advances in embodied AI and robotics, a significant gap remains between humanoid prototypes and practical industrial deployment. Today's humanoid landscape suffers from severe fragmentation across hardware architectures, incompatible software stacks, and fragile AI pipelines—forcing integrators to reinvent foundational control and deployment workflows for each platform. To bridge this divide, we can look to industrial robotic arms, which achieved widespread adoption by converging on standard motion control, common programming interfaces, and vendor-agnostic integration tools. This talk highlights the disconnect facing humanoids today, explores how the principles of industrial robotics can guide standardizing humanoid control, and examines where the industry will need to go—particularly through unified abstraction layers, common APIs, and cross-platform tooling—to enable integrators to deploy and work with humanoids effectively.`,
+    isSubmitted: true,
+  },
 ];
