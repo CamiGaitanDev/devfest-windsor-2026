@@ -239,4 +239,21 @@ In this talk, we will walk through how to keep the fast pace of prototyping whil
     description: `Despite rapid advances in embodied AI and robotics, a significant gap remains between humanoid prototypes and practical industrial deployment. Today's humanoid landscape suffers from severe fragmentation across hardware architectures, incompatible software stacks, and fragile AI pipelines—forcing integrators to reinvent foundational control and deployment workflows for each platform. To bridge this divide, we can look to industrial robotic arms, which achieved widespread adoption by converging on standard motion control, common programming interfaces, and vendor-agnostic integration tools. This talk highlights the disconnect facing humanoids today, explores how the principles of industrial robotics can guide standardizing humanoid control, and examines where the industry will need to go—particularly through unified abstraction layers, common APIs, and cross-platform tooling—to enable integrators to deploy and work with humanoids effectively.`,
     isSubmitted: true,
   },
+
+  {
+    id: "atif-khan-001",
+    title: "Build the Analyst, Not the Analysis --Data Agents That Discover, Solve, Review, and Learn",
+    speaker: "Atif Khan",
+    description: `What does it take to build an AI analyst that can tackle unfamiliar questions? This session explores Data Agents: systems that investigate data, choose methods, execute an analysis, and produce results people can inspect. The ambition is to build analytical capability that carries across tasks and business contexts.
+
+Atif Khan brings this approach to life through PiTrace, his team’s KDD Cup 2026 Creative Track submission, and a deceptively simple question: which phone should I buy? Answering it requires connecting information across spreadsheets, documents, images, and video, interpreting competing offers, and applying constraints that no single source explains completely.
+
+The talk follows the agent through discovery, problem solving, review, and repair. It examines how a defined operating sequence can give an agent freedom to choose its approach while preserving evidence of what happened. Concrete examples reveal both useful recovery from execution errors and the harder problem of detecting plausible mistakes that persist across multiple artifacts.
+
+Learning is another central theme: how can experience become reusable expertise? Atif discusses the shift from prescribing domain skills to developing generalizable procedures from observed failures and feedback, with review before those lessons shape future work.
+
+For technical leaders, the session offers practical ways to reduce manual coordination between analytical steps while preserving human judgment. Participants will explore where autonomy helps, what meaningful checks require, when an agent should seek help or abstain, and why an inspectable answer still needs scrutiny. The focus is on designing an analyst whose work can be examined, and continually improved.`,
+    isSubmitted: true,
+  },
+
 ];
