@@ -256,4 +256,20 @@ For technical leaders, the session offers practical ways to reduce manual coordi
     isSubmitted: true,
   },
 
+  {
+    id: "atif-khan-001",
+    title: "Build the Analyst, Not the Analysis --Data Agents That Discover, Solve, Review, and Learn",
+    speaker: "Atif Khan",
+    description: `What does it take to build an AI analyst that can tackle unfamiliar questions? This session explores Data Agents: systems that investigate data, choose methods, execute an analysis, and produce results people can inspect. The ambition is to build analytical capability that carries across tasks and business contexts.
+
+Atif Khan brings this approach to life through PiTrace, his team’s KDD Cup 2026 Creative Track submission, and a deceptively simple question: which phone should I buy? Answering it requires connecting information across spreadsheets, documents, images, and video, interpreting competing offers, and applying constraints that no single source explains completely.
+
+The talk follows the agent through discovery, problem solving, review, and repair. It examines how a defined operating sequence can give an agent freedom to choose its approach while preserving evidence of what happened. Concrete examples reveal both useful recovery from execution errors and the harder problem of detecting plausible mistakes that persist across multiple artifacts.
+
+Learning is another central theme: how can experience become reusable expertise? Atif discusses the shift from prescribing domain skills to developing generalizable procedures from observed failures and feedback, with review before those lessons shape future work.
+
+For technical leaders, the session offers practical ways to reduce manual coordination between analytical steps while preserving human judgment. Participants will explore where autonomy helps, what meaningful checks require, when an agent should seek help or abstain, and why an inspectable answer still needs scrutiny. The focus is on designing an analyst whose work can be examined, and continually improved.`,
+    isSubmitted: true,
+  },
+
 ];
