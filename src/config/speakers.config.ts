@@ -228,13 +228,17 @@ company: "Pythian",
   },
   {
     name: "Veronica Reingold",
-    role: "Computer Science Student",
-    company: "University of Windsor",
+    role: "Software Developer",
+    company: "Hyper Hippo Entertainment",
     imageUrl: "/speakers/veronica-reingold.webp",
     imageAlt: "Veronica Reingold",
     linkedinUrl: "https://www.linkedin.com/in/veronicareingold/",
     accentColor: "blue",
-    bio: `Veronica Reingold is a Computer Science student at the University of Windsor.`,
+    bio: `Veronica Reingold is a Software Developer at Hyper Hippo Entertainment, working with Unity, and an MSc in Computer Science student researching how AI can drive video game accessibility.
+
+Her experience spanning the game development industry and the fintech sector at Rocket Innovation Studio has given her firsthand insight into how AI is reshaping software development across different domains.
+
+Through her work, she champions deep technical fundamentals and human craft in an era of rapid automation.`,
   },
   {
     name: "Wen Teoh",
