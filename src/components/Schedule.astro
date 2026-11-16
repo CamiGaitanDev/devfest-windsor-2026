@@ -18,6 +18,16 @@ const PLACEHOLDER_IMAGE = "/google-person.png";
 const LEADERSHIP_TRACK = "Leadership and Entrepreneurship";
 const FIRESIDE_TITLE = "Lunch & Fireside Chat";
 
+const cyberDen = {
+  title: "The Cyber Den - A playground for aspiring ethical hackers.",
+  speaker: "Rob Chaykoski",
+  track: "Cybersecurity",
+  type: "Workshop",
+  location: "110",
+  description:
+    "Join us for a hands-on workshop to learn the basics of ethical hacking. No experience necessary; we will guide you every step of the way!",
+};
+
 const normalizeSpeakerName = (name: string) =>
   name
     .normalize("NFD")
@@ -95,6 +105,12 @@ const tracks = [
     gradient: "from-yellow-400 to-amber-500",
     text: "text-slate-900",
   },
+  {
+    name: "Cybersecurity",
+    icon: "shield",
+    gradient: "from-purple-500 to-purple-700",
+    text: "text-white",
+  },
 ];
 
 const trackRooms: Record<string, string> = {
@@ -102,14 +118,15 @@ const trackRooms: Record<string, string> = {
   "Build with AI": "112",
   "Full Stack": "B14",
   [LEADERSHIP_TRACK]: "B02",
+  Cybersecurity: "110",
 };
 
 const roomLinks: Record<string, string> = {
   "104": "https://ctl2.uwindsor.ca/classrooms/OB/104/",
   "112": "https://ctl2.uwindsor.ca/classrooms/OB/112/",
-  "B14": "https://ctl2.uwindsor.ca/classrooms/OB/B14/",
+  B14: "https://ctl2.uwindsor.ca/classrooms/OB/B14/",
   "110": "https://ctl2.uwindsor.ca/classrooms/OB/110/",
-  "B02": "https://ctl2.uwindsor.ca/classrooms/OB/B02/",
+  B02: "https://ctl2.uwindsor.ca/classrooms/OB/B02/",
 };
 
 /*
@@ -186,26 +203,31 @@ function createScheduledSession(
 
 const scheduledSessions = [
   {
-  time: "8:45 AM",
-  duration: "60 min",
-  title: "Welcoming and Keynote",
-  speaker: "Serg Masís",
-  track: "ALL",
-  type: "Keynote",
-  location: "104",
-  description: `Artificial intelligence has become remarkably good at impressing us. It can write poetry, generate images, answer complex questions, and produce convincing predictions about its own revolutionary future. But being impressive and being useful aren't the same.
+    time: "8:45 AM",
+    duration: "60 min",
+    title: "Welcoming and Keynote",
+    speaker: "Serg Masís",
+    track: "ALL",
+    type: "Keynote",
+    location: "104",
+    description: `Artificial intelligence has become remarkably good at impressing us. It can write poetry, generate images, answer complex questions, and produce convincing predictions about its own revolutionary future. But being impressive and being useful aren't the same.
 
 What if AI's greatest contributions are far less glamorous than the headlines suggest? What if the real revolution is about doing millions of small, necessary things that humans lack the time, resources, or expertise to do consistently?
 
 This keynote moves beyond AI's hype cycle to examine how we can prioritize technological investments based on real-world value. From healthcare and infrastructure to energy and food security, we'll explore where AI can make a meaningful difference before taking a closer look at agriculture—and
 the challenge of feeding a growing population amid climate uncertainty, labor shortages, and finite resources. Drawing on examples from Syngenta, we'll discover why the most important AI breakthroughs may be the ones nobody thinks to call revolutionary. Yet this unsexy side of AI may prove most consequential!`,
-},
+  },
 
   // 10:00–10:45 AM
   createScheduledSession("10:00 AM", "Nilesh Patel", "Google Cloud"),
   createScheduledSession("10:00 AM", "Andrea Irina Yzeiri", "Build with AI"),
-  createScheduledSession("10:00 AM", "Arunesh Choudhary", "Full Stack"),
+  createScheduledSession("10:00 AM", "Umair Durrani", "Full Stack"),
   createScheduledSession("10:00 AM", "Mahnoz Akhtari", LEADERSHIP_TRACK),
+  {
+    ...cyberDen,
+    time: "10:00 AM",
+    duration: "105 min",
+  },
 
   // 11:00–11:45 AM
   createScheduledSession("11:00 AM", "Bryan Kelly", "Google Cloud"),
@@ -240,6 +262,11 @@ Moderator:
   createScheduledSession("1:00 PM", "Joe Youssouf", "Build with AI"),
   createScheduledSession("1:00 PM", "Elvis Akhalu", "Full Stack"),
   createScheduledSession("1:00 PM", "Sean Bridgeman", LEADERSHIP_TRACK),
+  {
+    ...cyberDen,
+    time: "1:00 PM",
+    duration: "165 min",
+  },
 
   // 2:00–2:45 PM
   createScheduledSession("2:00 PM", "Don Ward", "Google Cloud"),
@@ -266,6 +293,7 @@ Moderator:
     "Full Stack",
   ),
   createScheduledSession("4:00 PM", "Wen Teoh", LEADERSHIP_TRACK),
+  createScheduledSession("4:00 PM", "Arunesh Choudhary", "Cybersecurity"),
 
   // Closing session
   {
@@ -314,6 +342,8 @@ const icons: Record<string, string> = {
     '<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5L2 10l5 5M13 5l5 5-5 5"/></svg>',
   rocket:
     '<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M17 2c-5 0-8 2-10 6L4 9l-2 3 4 1 1 4 3-2 1-3c4-2 6-5 6-10zM5 15l-2 2 2-1 1-2z"/></svg>',
+  shield:
+    '<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
 };
 ---
 
@@ -1165,7 +1195,7 @@ const icons: Record<string, string> = {
   }
 
   /* =====================================
-     FIRESIDE CHAT — SIX PARTICIPANTS
+     FIRESIDE CHAT — FIVE PARTICIPANTS
   ===================================== */
 
   .fireside-people {
@@ -1413,7 +1443,7 @@ const icons: Record<string, string> = {
       border-radius: 0.625rem;
     }
 
-    /* SIX PARTICIPANTS — 3 PER ROW */
+    /* FIRESIDE PARTICIPANTS — 3 PER ROW */
 
     .fireside-people {
       grid-template-columns: repeat(

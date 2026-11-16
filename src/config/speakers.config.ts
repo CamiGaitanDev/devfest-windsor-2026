@@ -310,4 +310,20 @@ Through her work, she champions deep technical fundamentals and human craft in a
     accentColor: "gold",
     bio: `Mahnoz Akhtari is a fourth-year Computer Science and Software Engineering student at the University of Windsor. She runs Grayfel Technologies and is lead developer at Sterling Cybersecurity & Advisory Group. As Campus Director for the Hult Prize at UWindsor, she works with partners across Windsor-Essex to get student ideas to the point where the region's accelerators and funders can actually take them.`,
   },
+
+{
+  name: "Rob Chaykoski",
+  role: "Lead Security Engineer",
+  company: "Ontario Health",
+  imageUrl: "/speakers/RobChaykoski.png",
+  imageAlt: "Rob Chaykoski, Lead Security Engineer at Ontario Health",
+  linkedinUrl: "https://www.linkedin.com/in/robchaykoski/",
+  accentColor: "blue",
+  bio: `Rob Chaykoski is an Information Security professional currently working at Ontario Health as a Lead Security Engineer on the Platform Engineering team, where he leads Zero Trust initiatives, compliance, and governance.
+
+With 25 years of experience across healthcare, oil and gas, insurance, finance, and other industries, Rob has helped organizations develop and strengthen information security programs, operations, industrial security controls, data security, and architecture.
+
+Outside of work, Rob loves everything related to technology, UFOs, and summer.`,
+},
+
 ];
