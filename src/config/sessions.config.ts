@@ -272,4 +272,20 @@ For technical leaders, the session offers practical ways to reduce manual coordi
     isSubmitted: true,
   },
 
+  {
+    id: "nilesh-patel-001",
+    title: "Navigating the Agentic AI Era in the Modern Enterprise",
+    speaker: "Nilesh Patel",
+    description: `AI has evolved from scripted chatbots to generative assistants to autonomous agents that can reason, plan, and take action. Welcome to the agentic era.
+
+In this session, we'll trace that evolution and explore how developments over the past year are shaping AI in the modern enterprise.
+
+We'll examine how the latest Gemini models, including fast and cost-efficient Flash models, are making agents smarter, faster, and more accessible to every developer. We'll also cover how agents connect to tools and data, collaborate with other agents, and explain why keeping a human in the loop still matters.
+
+Then a live demo will bring these concepts to life, showing how to start building your own AI agent with Gemini.
+
+Whether you're a student, a developer, or just curious about where AI is heading, you'll leave with a clear picture of the agentic landscape and a practical place to start.`,
+    isSubmitted: true,
+  },
+
 ];
